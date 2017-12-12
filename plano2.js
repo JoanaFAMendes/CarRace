@@ -141,9 +141,9 @@ function createLights() {
 
 function criaMeta() { //função que cria a meta de partida
     // upload image para textura da meta
-    var textureMeta = new THREE.TextureLoader().load('./checkeredHorizontal.png');
+    var textureMeta = new THREE.TextureLoader().load('checkeredHorizontal.png');
     var materialMeta = new THREE.MeshBasicMaterial({ map: textureMeta });
-    var texturePilar = new THREE.TextureLoader().load('./checkeredVertical.png');
+    var texturePilar = new THREE.TextureLoader().load('checkeredVertical.png');
     var materialPilar = new THREE.MeshBasicMaterial({ map: texturePilar });
 
     var geomPilarEsquerdo = new THREE.BoxGeometry(200, 800, 50);
@@ -194,7 +194,7 @@ function criarBancada(posX, posY, posZ, rotX, rotY, rotZ) { //função que cria 
     //base.rotation.y = -0.1;
     //base.rotation.set = (Math.PI,0,0);
 
-    var textureBancada = new THREE.TextureLoader().load('./coloredPattern.jpg', function (texture) {
+    var textureBancada = new THREE.TextureLoader().load('coloredPattern.jpg', function (texture) {
 
         textureBancada.wrapS = textureBancada.wrapT = THREE.RepeatWrapping;
         textureBancada.offset.set(0, 0);
@@ -434,7 +434,7 @@ function createRoad() {
     objetoCone3 = new THREE.Object3D();
     function criaCone(name, x2, y2, z2, r1, r2) {
         // create an object 3D - a cone de estrada
-        var textureCone3 = new THREE.TextureLoader().load('./cone.png');
+        var textureCone3 = new THREE.TextureLoader().load('cone.png');
         var geometryCone3 = new THREE.CylinderGeometry(0.2, 0.8, 2);
         var materialCone3 = new THREE.MeshBasicMaterial({ map: textureCone3, side: THREE.DoubleSide });
         var cone3 = new THREE.Mesh(geometryCone3, materialCone3);
@@ -474,7 +474,7 @@ function createRoad() {
     objetoBola4 = new THREE.Object3D();
     function criarBola(name, x1, y1, z1) {
 
-        var textureBola4 = new THREE.TextureLoader().load('./bola.jpg');
+        var textureBola4 = new THREE.TextureLoader().load('bola.jpg');
         var geometryBola4 = new THREE.SphereGeometry(0.8, 100, 100);
         var materialBola4 = new THREE.MeshBasicMaterial({ map: textureBola4, side: THREE.DoubleSide });
         var bola4 = new THREE.Mesh(geometryBola4, materialBola4);
