@@ -679,7 +679,6 @@ function animate() {
             'O jogo terminou!',
             'error'
         )
-       
     }
 }
 
