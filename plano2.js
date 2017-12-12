@@ -706,7 +706,7 @@ function doKey(evt) {
     if (evt.keyCode == 75) {
         cameraFrente = false;
 
-    }
+    }//
 
 }
 
